@@ -18,11 +18,9 @@ contract FundMe {
     AggregatorV3Interface public priceFeed; // Chainlink price feed interface
 
     // minimum USD amount to fund (e.g., $5)
-    address public ETH_USD_PRICE_FEED =
-        0x694AA1769357215DE4FAC081bf1f309aDC325306;
     uint256 public constant MINIMUM_USD = 5 * 1e18;
 
-    constructor() {
+    constructor(address ETH_USD_PRICE_FEED) {
         i_owner = msg.sender;
         priceFeed = AggregatorV3Interface(ETH_USD_PRICE_FEED);
     }
