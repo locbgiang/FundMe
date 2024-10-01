@@ -15,7 +15,7 @@ contract FundMeTest is Test {
         fundMe = new FundMe();
     }
 
-    function testOwnerIsSetCorrectly() public {
+    function testOwnerIsSetCorrectly() public view {
         assertEq(fundMe.i_owner(), OWNER_ADDRESS);
     }
 }
