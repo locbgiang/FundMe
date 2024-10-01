@@ -16,6 +16,6 @@ contract FundMeTest is Test {
     }
 
     function testOwnerIsSetCorrectly() public {
-        assertEq(fundMe.owner(), OWNER_ADDRESS);
+        assertEq(fundMe.i_owner(), OWNER_ADDRESS);
     }
 }
