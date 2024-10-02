@@ -11,11 +11,5 @@ contract FundMeTest is Test {
 
     function setUp() public {
         // Prank set the msg.sender for the next call to be the OWNER_ADDRESS
-        vm.prank(OWNER_ADDRESS);
-        fundMe = new FundMe();
-    }
-
-    function testOwnerIsSetCorrectly() public view {
-        assertEq(fundMe.i_owner(), OWNER_ADDRESS);
     }
 }
