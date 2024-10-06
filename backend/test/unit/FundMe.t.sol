@@ -115,7 +115,7 @@ contract FundMeTest is Test {
 
         uint256 gasEnd = gasleft();
         uint256 gasUsed = (gasStart - gasEnd) * tx.gasprice;
-        console.log(gasUsed);
+        console.log("gas used", gasUsed);
 
         // assert
         assert(address(fundMe).balance == 0);
