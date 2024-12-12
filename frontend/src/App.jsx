@@ -1,15 +1,11 @@
-import {Navbar} from "./components/Navbar";
-import { Body } from "./components/Body";
-
-function App() {
+import {Navbar, Body} from './components'
+const App = () => {
   return (
     <div>
-      <div>
-        <Navbar />
-      </div>
+      <Navbar />
       <Body />
     </div>
   )
 }
 
-export default App
+export default App;

@@ -10,6 +10,7 @@ import {PriceConverter} from "./PriceConverter.sol";
  * @title FundMe
  * @author Loc Giang
  * @notice A contract that collect funds from multiple accounts and the onwer can withdraw that fund.
+ * deployed on sepolia: 0xAdBb138B5c79040b9759d37eB2B1C01F2196bb52
  */
 contract FundMe {
     using PriceConverter for uint256;
